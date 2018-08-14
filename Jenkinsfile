@@ -1,6 +1,7 @@
 pipeline {
   agent {
-    label 'node1'
+//    label 'node1'
+    docker { image 'composer' }
   }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
