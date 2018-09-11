@@ -14,7 +14,7 @@ pipeline {
     }
     stage('BrowserStack Testing'){
       steps{
-        browserstack('devsil-browserstack') {
+        browserstack('browserstack-test') {
           sh 'composer single'
         }
       }
